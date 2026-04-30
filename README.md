@@ -18,3 +18,7 @@ if you find it usefule and use it for you research, please cite as the following
   keywords={Coastlines;Sea measurements;Synthetic aperture radar;Image edge detection;Training;Europe;Deep learning;Sentinel-1;Pixel;Land surface;Coast detection;dataset;deep learning (DL);synthetic aperture radar (SAR)},
   doi={10.1109/LGRS.2026.3659009}}
 ```
+An example of the reference generation is shown in the following:
+
+
+<img width="2516" height="888" alt="image" src="https://github.com/user-attachments/assets/1f9a9015-6510-4f07-a4f5-b36068f357e5" />
