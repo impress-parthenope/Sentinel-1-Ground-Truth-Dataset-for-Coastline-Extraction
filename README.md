@@ -23,4 +23,4 @@ An example of the reference generation is shown in the following:
 <img width="500" height="230" alt="image" src="https://github.com/user-attachments/assets/edeac383-32db-41fb-8b69-98602c7ee630" />
 
 
-<img width="1500" height="500" alt="image" src="https://github.com/user-attachments/assets/1f9a9015-6510-4f07-a4f5-b36068f357e5" />
+<img width="1000" height="300" alt="image" src="https://github.com/user-attachments/assets/1f9a9015-6510-4f07-a4f5-b36068f357e5" />
