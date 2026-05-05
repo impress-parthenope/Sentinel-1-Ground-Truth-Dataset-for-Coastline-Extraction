@@ -70,7 +70,6 @@ In orer to run them, customize:
 
 * path of Orfeo toolbox
 * path of [EEA](https://www.eea.europa.eu/en/datahub/datahubitem-view/af40333f-9e94-4926-a4f0-0a787f1d2b8f) shapefile
-* path of [EEA](https://www.eea.europa.eu/en/datahub/datahubitem-view/af40333f-9e94-4926-a4f0-0a787f1d2b8f) shapefile
 * path of [EuHydro](https://land.copernicus.eu/en/products/eu-hydro)
 * path of SAR Geotiff file
 * path for saving output co-registered coastline mask.
