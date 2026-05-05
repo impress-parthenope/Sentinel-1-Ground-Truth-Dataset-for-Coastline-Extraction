@@ -5,7 +5,7 @@ This repository provides a multi-stage processing pipeline for Sentinel-1 SAR da
 The pipeline generates co-registered SAR imagery paired with corresponding binary masks, exported in `.mat` format for downstream analysis following the methodology proposed in  [IEEE GRSL paper](https://ieeexplore.ieee.org/document/11366898).
 The dataset used in the paper is free-available and shared in [release section](https://github.com/impress-parthenope/Sentinel-1-Ground-Truth-Dataset-for-Coastline-Extraction/releases/tag/dataset).
 
-if you find it useful and use it for you research, please cite as the following
+If you find it useful and use it for you research, please cite as the following
 ```
 @ARTICLE{11366898,
   author={Passarello, Gianpaolo and Vitale, Sergio and Ferraioli, Giampaolo and Pascazio, Vito},
@@ -55,19 +55,38 @@ Ensure the following software is installed and configured:
 
 ## ▶️ Usage
 
+
 ### Step 1 – SNAP Processing
 
-Process Sentinel-1 data and export GeoTIFF files.
+Download the Sentinel-1 data and process it: 
+* Deburst
+* Terrain correction
+* Export to GeoTIFF format
 
 ### Step 2 – Co-Registration
 
 Run ORFEO toolbox scripts to align the GeoTIFF files of SAR images extracted by SNAP with the external dataset.
+In orer to run them, customize:
+
+* path of Orfeo toolbox
+* path of [EEA](https://www.eea.europa.eu/en/datahub/datahubitem-view/af40333f-9e94-4926-a4f0-0a787f1d2b8f) shapefile
+* path of [EEA](https://www.eea.europa.eu/en/datahub/datahubitem-view/af40333f-9e94-4926-a4f0-0a787f1d2b8f) shapefile
+* path of [EuHydro](https://land.copernicus.eu/en/products/eu-hydro)
+* path of SAR Geotiff file
+* path for saving output co-registered coastline mask.
+
 
 ### Step 3 – MATLAB Processing
 
 ```matlab
-run('main_processing.m')
+run('create_coastline.m')
 ```
+
+### Content of the Repository
+The repository contains:
+- run_otb_eea.bat: Orfeo scripts for co-registering EEA shapefiles with SAR data
+- run_otb_euh.bat: Orfeo scripts for co-registering EuHydro shapefiles with SAR data
+- creat_coastline.m  as main file for generating the reference mask from SAR input
 
 ## 📁 Project Structure
 
