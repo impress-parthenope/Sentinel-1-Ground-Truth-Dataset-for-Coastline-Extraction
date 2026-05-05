@@ -51,7 +51,7 @@ Processing is performed using ESA SNAP:
 ### 2. Co-Registration (ORFEO Toolbox)
 
 * Import SAR GeoTIFF outputs
-* Co-register SAR images with external dataset
+* Co-register SAR images with external dataset ([EEA](https://www.eea.europa.eu/en/datahub/datahubitem-view/af40333f-9e94-4926-a4f0-0a787f1d2b8f) and [EuHydro](https://land.copernicus.eu/en/products/eu-hydro) databases)
 * Generate paired image–mask datasets
 
 ### 3. Final Processing (MATLAB)
