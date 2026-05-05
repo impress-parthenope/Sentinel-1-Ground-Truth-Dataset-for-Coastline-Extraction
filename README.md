@@ -19,24 +19,6 @@ if you find it useful and use it for you research, please cite as the following
   doi={10.1109/LGRS.2026.3659009}}
 ```
 
-
-## 🎯 Objectives
-
-* Convert raw Sentinel-1 SAR data into analysis-ready products
-* Perform accurate co-registration between SAR imagery and external datasets
-* Generate aligned image–mask pairs for MATLAB-based processing
-
-## 🛰️ Input Data
-
-* Sentinel-1 SAR data (SLC format)
-* External dataset for co-registration
-
-## 📤 Outputs
-
-* Co-registered SAR images
-* Corresponding binary masks
-* Final outputs stored in MATLAB `.mat` format
-
 ## ⚙️ Processing Workflow
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/edeac383-32db-41fb-8b69-98602c7ee630" />
 
