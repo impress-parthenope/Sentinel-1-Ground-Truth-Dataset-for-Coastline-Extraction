@@ -1,9 +1,11 @@
 # Sentinel-1-Ground-Truth-Dataset-for-Coastline-Extraction
 
-This repository contains the dataset for coastline extraction from SAR data.
+This repository contains the code for creating the dataset for coastline extraction from SAR data following the methodology proposed in  [IEEE GRSL paper](https://ieeexplore.ieee.org/document/11366898).
+The dataset used in the paper is free-available and shard in [release section](https://github.com/impress-parthenope/Sentinel-1-Ground-Truth-Dataset-for-Coastline-Extraction/releases/tag/dataset).
+
 The dataset is composed by Sentinel-1 VV and VH input data and reference binary masks indicating the coastline position.
 
-The dataset has been built using free Sentinel-1 data and the reference costaline have been extracted by shapefile provided by the EEA and EuHydro database. The building process is described in the [IEEE GRSL paper](https://ieeexplore.ieee.org/document/11366898)
+The dataset has been built using free Sentinel-1 data and the reference costaline have been extracted by shapefile provided by the EEA and EuHydro database. The building process is described in the
 
 if you find it usefule and use it for you research, please cite as the following
 ```
