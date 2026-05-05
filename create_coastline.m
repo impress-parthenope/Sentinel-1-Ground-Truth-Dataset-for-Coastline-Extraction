@@ -1,0 +1,56 @@
+clear all; close all; clc;
+addpath('./utils/');
+
+%************************************************
+% main file for coast extraction and alignment with SAR
+% data requirement: sar image in tif format, mask from eea shapaefile 
+%************************************************
+%********   USAGE  ******************************
+% The code has been written considering the same name for SAR, EEA and EUH file with the following notation
+% SAR image -> name1.tif
+% EEA mask -> name1_mask2.tif
+% EUH mask -> name1_mask.tif
+
+% fname: 		set the pre-fix to be used for SAR image, EEA and EUH masks (name1 in the example above) 
+% path_imgs: 	set the folder path containg the SAR img (tif file)
+% path_mask: 	set the folder path containg the shoreline map (eea mask file)
+% th:			threshold for non maxima suppression (default value 0.13)
+% mask5: 		desired output-> coastline mask co-registered with SAR img
+% NB: SAR image should be in intensity format
+%************************************************
+
+%% setting and loading
+fname = 'SAR2';
+th=0.13; % treshold for non maxima suppression
+
+path_imgs = ['./SAR_TIFF/'];
+path_mask = ['./Masks/'];
+img = single(imread([path_imgs, fname, 'VH.tif']));
+
+img = sqrt(img); % intensity to amplitude
+
+img = img/max(img(:));
+
+line_eea = imread([path_mask,fname,'_mask2.tif']);
+line_euh = imread([path_mask,fname,'_mask.tif']);
+
+%% Data Visualization
+img2 = create_overlay(img,line_eea); %overlay eea
+img3 = create_overlay(img,line_euh); %overlay euhydro
+figure();
+ax(1)=subplot(131);imshow(img,[0 0.1]);
+ax(2)=subplot(132);imshow(img2,[0 0.2]);
+ax(3)=subplot(133);imshow(img3,[0 0.05]);
+linkaxes(ax,'xy');
+
+%% Detection
+mask1 = cost_detection(line_euh,th,line_eea);
+
+%refining deleting sparse pixels
+mask =delete_sparse_pixel(mask1);
+figure(); imshow(mask);
+overlay = create_overlay(img, mask);
+save('mask.mat',"mask");
+
+figure(); imshow(overlay,[0 0.1]); % visualize results
+% save("overlay.mat","overlay");
