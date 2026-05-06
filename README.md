@@ -68,11 +68,11 @@ Download the Sentinel-1 data and process it:
 Run ORFEO toolbox scripts to align the GeoTIFF files of SAR images extracted by SNAP with the external dataset.
 In orer to run them, customize:
 
-* path of Orfeo toolbox
-* path of [EEA](https://www.eea.europa.eu/en/datahub/datahubitem-view/af40333f-9e94-4926-a4f0-0a787f1d2b8f) shapefile for run_otb_eea.bat
-* path of [EuHydro](https://land.copernicus.eu/en/products/eu-hydro) shapefile for run_otb_euh.bat
-* path of SAR Geotiff file
-* path for saving output co-registered coastline mask.
+* <OTB_PATH>:  path of Orfeo toolbox
+* <EEA_PATH>:  path where [EEA](https://www.eea.europa.eu/en/datahub/datahubitem-view/af40333f-9e94-4926-a4f0-0a787f1d2b8f) shapefile is stored (only for run_otb_eea.bat)
+* <EUH_PATH>:  path where [EuHydro](https://land.copernicus.eu/en/products/eu-hydro) shapefile is stored (only for run_otb_euh.bat)
+* <SAR_TIFF_PATH>:  path where SAR Geotiff file is stored
+* <Out_PATH>: path for saving output co-registered coastline mask.
 
 
 ### Step 3 – MATLAB Processing
