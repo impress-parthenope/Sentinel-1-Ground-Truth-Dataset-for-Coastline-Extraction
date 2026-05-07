@@ -74,9 +74,9 @@ Ensure the following software is installed and configured:
 This pipeline is intended for generating aligned SAR–mask datasets, potentially suitable for machine learning applications such as classification or segmentation.
 
 # Team members
+ Gianpaolo Passarello (gianpaolo.passarello001@studenti.uniparthenope.it);
  Sergio Vitale    (contact person, sergio.vitale@uniparthenope.it);
  Giampaolo Ferraioli (giampaolo.ferraioli@uniparthenope.it);
- Gilda  Schirinzi (gilda.schirinzi@uniparthenope.it)
  Vito Pascazio (vito.pascazio@uniparthenope.it)
  
 # License
