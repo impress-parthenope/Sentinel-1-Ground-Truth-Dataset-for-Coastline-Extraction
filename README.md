@@ -87,7 +87,6 @@ All rights reserved. This work should only be used for nonprofit purposes.
 By downloading and/or using any of these files, you implicitly agree to all the
 terms of the license, as specified in the document LICENSE.txt
 (included in this directory)
-An example of the reference generation is shown in the following:
 
 
 
