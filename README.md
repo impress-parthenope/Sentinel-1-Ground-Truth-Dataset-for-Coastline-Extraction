@@ -28,7 +28,7 @@ The construction of the dataset requries three steps:
 Download the Sentinel-1 data and process it: 
 * Deburst
 * Terrain correction
-* Export to GeoTIFF format as <filename>.tif
+* Export to GeoTIFF format as <FILENAME>.tif
 
 ### Step 2 – Co-Registration
 Run ORFEO toolbox scripts to align the GeoTIFF files of SAR images extracted by SNAP with the external dataset.
@@ -38,7 +38,7 @@ In orer to run them, customize:
 * <EEA_PATH>:  path where [EEA](https://www.eea.europa.eu/en/datahub/datahubitem-view/af40333f-9e94-4926-a4f0-0a787f1d2b8f) shapefile is stored (only for run_otb_eea.bat)
 * <EUH_PATH>:  path where [EuHydro](https://land.copernicus.eu/en/products/eu-hydro) shapefile is stored (only for run_otb_euh.bat)
 * <SAR_TIFF_PATH>:  path where SAR Geotiff file is stored
-* <filename>:   filename of SAR tiff file chosen in the previous step
+* <FILENAME>:   filename of SAR tiff file chosen in the previous step
 * <Out_PATH>: path for saving output co-registered coastline mask.
 
 
