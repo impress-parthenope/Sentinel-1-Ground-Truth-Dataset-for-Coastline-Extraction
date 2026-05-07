@@ -81,7 +81,7 @@ This pipeline is intended for generating aligned SAR–mask datasets, potentiall
  
 # License
 The code are Copyright (c) 2026 Dipartimento di Ingegneria and Dipartimento di Scienze e Tecnologie of Università degli Studi di Napoli "Parthenope".
-The data are under the [Copernicus License] (https://cds.climate.copernicus.eu/licences/ec-sentinel)
+The data are under the [Copernicus License](https://cds.climate.copernicus.eu/licences/ec-sentinel)
 All rights reserved. This work should only be used for nonprofit purposes.
 
 By downloading and/or using any of these files, you implicitly agree to all the
