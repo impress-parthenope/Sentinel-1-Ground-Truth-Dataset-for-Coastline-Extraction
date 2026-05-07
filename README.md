@@ -73,21 +73,20 @@ Ensure the following software is installed and configured:
 
 This pipeline is intended for generating aligned SAR–mask datasets, potentially suitable for machine learning applications such as classification or segmentation.
 
-## 🤝 Contributing
+# Team members
+ Sergio Vitale    (contact person, sergio.vitale@uniparthenope.it);
+ Giampaolo Ferraioli (giampaolo.ferraioli@uniparthenope.it);
+ Gilda  Schirinzi (gilda.schirinzi@uniparthenope.it)
+ Vito Pascazio (vito.pascazio@uniparthenope.it)
+ 
+# License
+Copyright (c) 2026 Dipartimento di Ingegneria and Dipartimento di Scienze e Tecnologie of Università degli Studi di Napoli "Parthenope".
 
-1. Fork the repository
-2. Create a new branch
-3. Commit your changes
-4. Open a pull request
+All rights reserved. This work should only be used for nonprofit purposes.
 
-## 📄 License
-
-Specify license (e.g., MIT, GPL)
-
-## 📧 Contact
-
-Add your contact details or GitHub profile
-
+By downloading and/or using any of these files, you implicitly agree to all the
+terms of the license, as specified in the document LICENSE.txt
+(included in this directory)
 An example of the reference generation is shown in the following:
 
 
