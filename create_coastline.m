@@ -3,7 +3,7 @@ addpath('./utils/');
 
 %************************************************
 % main file for coast extraction and alignment with SAR
-% data requirement: sar image in tif format, mask from eea shapaefile 
+% data requirement: sar image in tif format, mask from eea shapaefile , mask from euh shapefile
 %************************************************
 %********   USAGE  ******************************
 % The code has been written considering the same name for SAR, EEA and EUH file with the following notation
